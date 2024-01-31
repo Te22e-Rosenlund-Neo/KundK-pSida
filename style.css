@@ -1,0 +1,9 @@
+body{
+    font-family: 'Inter', Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
