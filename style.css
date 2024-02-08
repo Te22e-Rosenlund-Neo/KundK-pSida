@@ -19,8 +19,8 @@ nav{
 }
 main{
     display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 3;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 footer{
     min-height: 60px;
@@ -32,7 +32,9 @@ footer{
     background-color: #8F2424;
 }
 article{
+    border: 2px solid black;
     display: grid;
     grid-template-columns: 2;
     grid-template-rows: 2;
+    margin:10px ;
 }
