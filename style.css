@@ -31,6 +31,8 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
+    min-width: 100%;
 }
 .Title{
     font-size: 50px;
@@ -41,6 +43,9 @@ nav{
     background-color: #8F2424;
     align-items: center;
     color: white;
+}
+.DownerAccount{
+    display: none;
 }
 main{
     display: grid;
@@ -76,12 +81,50 @@ h3{
     margin-left: 5px;
     text-align: center;
 }
+
 /* phone */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 640px){
     main{
         display: flex;
         flex-direction: column;
     }
+    .DownerAccount{
+        display: block;   
+    }
+    .UpperAccount{
+        display: none;
+    }
+    nav{
+        justify-content: space-around;
+    }
+    header{
+        justify-content: space-around;
+        text-align: center;
+    }
 }
 /* tablet */
-@media screen and (max-width: 1060){}
+@media screen and (min-width: 641px) and (max-width: 1060px ){
+
+    main{
+        display: grid;
+        grid-template-rows: 2fr 2fr 2fr;
+        grid-template-columns: 2fr 2fr ;
+    }
+    article{
+        margin: 0px;
+    }
+    .DownerAccount{
+        display: block;   
+    }
+    .UpperAccount{
+        display: none;
+    }
+    nav{
+        justify-content: space-around;
+    }
+    header{
+        justify-content: space-between;
+    }
+
+
+}
