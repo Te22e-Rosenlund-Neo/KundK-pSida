@@ -1,4 +1,29 @@
-
+.cart{
+    display: flex;
+    flex-direction: row;
+}
+.dropdown{
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+        background-color: red;
+      }
+.dropdowncontent{
+    display: none;
+    position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+#meny:focus-within > .dropdowncontent{
+    display: block;
+}
 
 header{
     font-family: 'Inter', Verdana, sans-serif;
@@ -51,3 +76,12 @@ h3{
     margin-left: 5px;
     text-align: center;
 }
+/* phone */
+@media screen and (max-width: 768px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* tablet */
+@media screen and (max-width: 1060){}

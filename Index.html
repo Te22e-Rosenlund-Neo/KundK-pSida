@@ -8,68 +8,76 @@
     <script defer src="Script.Js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="ReadLocalStorage()">
     <header>
         <img src="./Images/legologo.webp" alt="Logo" height="92px" width = "120px">
         <h1 class="Title">Lego-Finder.org</h1>
         <button onclick ="AcountPage()">
             <img src="./Images/acounticon.webp" alt="AcountImage" height="60px" width="60px"/>
           </button>
-          <button onclick ="Cart()">
-            <img src="./Images/shopping-cart-icon-512x462-yrde1eu0.webp" alt="CartImage" height="60px" width="60px"/>
-          </button>
+
+          <div id="meny">
+            <button class="cart" class="dropdown">
+                <img src="./Images/shopping-cart-icon-512x462-yrde1eu0.webp" alt="CartImage" height="60px" width="60px"/>
+                <h1 id="ItemCount">0</h1>
+              </button>
+              <div class="dropdowncontent">
+              </div>
+        </div>
     </header>
     <nav>
-      <h2>Filters:</h2>
+      <button onclick="k()">
+      <h2>Reset cart</h2>
+    </button>
     </nav>
-    <main>
+    <main> 
       <article>
         <h3>Republic troopers vs sith troopers</h3>
         <h3>gunila</h3>
         <h3>france</h3>
         <h3>250kr</h3>
         <img class="LegoSets" src="Images/legoset1.webp" alt="lego star wars set 75001 images" height="250px" width = "250px">
-        <button onclick ="AddCart()">Add to cart</button>
+        <button onclick ="AddCart(250, 'RepublicTroopers')">Add to cart</button>
       </article>
       <article>
-        <h3>Republic troopers vs sith troopers</h3>
+        <h3>Clone Scout walker</h3>
         <h3>Joe biden</h3>
         <h3>germany</h3>
         <h3>300kr</h3>
         <img class="LegoSets" src="Images/legoset2.webp" alt="lego star wars set 75001 images" height="250px" width = "250px">
-        <button onclick ="AddCart()">Add to cart</button>
+        <button onclick ="AddCart(300, 'CloneScout')">Add to cart</button>
       </article>
       <article>
-        <h3>Republic troopers vs sith troopers</h3>
+        <h3>Luke Skywalkers X-wing </h3>
         <h3>FriedMan1296</h3>
         <h3>USA</h3>
         <h3>450kr</h3>
         <img class="LegoSets" src="Images/legoset3.webp" alt="lego star wars set 75001 images" height="250px" width = "250px">
-        <button onclick ="AddCart()">Add to cart</button>
+        <button onclick ="AddCart(450, 'Xwing')">Add to cart</button>
       </article>
       <article>
-        <h3>Republic troopers vs sith troopers</h3>
+        <h3>A-wing starfighter</h3>
         <h3>PurpleGuy</h3>
         <h3>USA</h3>
         <h3>400kr</h3>
         <img class="LegoSets" src="Images/legoset4.webp" alt="lego star wars set 75001 images" height="250px" width = "250px">
-        <button onclick ="AddCart()">Add to cart</button>
+        <button onclick ="AddCart(400, 'AWing')">Add to cart</button>
       </article>
       <article>
-        <h3>Republic troopers vs sith troopers</h3>
+        <h3>Republic AV7 cannon</h3>
         <h3>supermonkey1</h3>
         <h3>Italy</h3>
         <h3>1250kr</h3>
         <img class="LegoSets" src="Images/legoset5.webp" alt="lego star wars set 75001 images" height="250px" width = "250px">
-        <button onclick ="AddCart()">Add to cart</button>
+        <button onclick ="AddCart(1250, 'AV7')">Add to cart</button>
       </article>
       <article>
-        <h3>Republic troopers vs sith troopers</h3>
+        <h3>Ninjago</h3>
         <h3>fredrik</h3>
         <h3>UAE</h3>
         <h3>600kr</h3>
         <img class="LegoSets" src="Images/legoset6.webp" alt="lego star wars set 75001 images" height="250px" width = "250px">
-        <button onclick ="AddCart()">Add to cart</button>
+        <button onclick ="AddCart(600, 'Ninjago')">Add to cart</button>
       </article>
     </main>
     <footer>
