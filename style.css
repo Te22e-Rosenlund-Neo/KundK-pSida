@@ -23,6 +23,7 @@
 }
 #meny:focus-within > .dropdowncontent{
     display: block;
+    text-align: center;
 }
 
 header{
@@ -100,6 +101,9 @@ h3{
     header{
         justify-content: space-around;
         text-align: center;
+    }
+    .Title{
+        font-size: 35px;
     }
 }
 /* tablet */
