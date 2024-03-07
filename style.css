@@ -1,5 +1,6 @@
 a{
-    color: white;
+    text-decoration: none;
+    color: black;
 }
 .cart{
     display: flex;
